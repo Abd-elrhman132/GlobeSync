@@ -1,0 +1,29 @@
+.cityList {
+  width: 100%;
+  flex: 1; /* Occupy remaining space */
+  list-style: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-right: 0.8rem;
+}
+
+.cityList::-webkit-scrollbar {
+  width: 5px;
+}
+
+.cityList::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.cityList::-webkit-scrollbar-thumb {
+  background: var(--color-dark-3);
+  border-radius: 10px;
+}
+
+.cityList::-webkit-scrollbar-thumb:hover {
+  background: var(--color-light-4);
+}

@@ -1,0 +1,9 @@
+.app {
+  height: 100vh;
+  /* Removed padding to have a full-screen modern dashboard look */
+  padding: 0;
+  overscroll-behavior-y: none;
+  display: flex;
+  position: relative;
+  background-color: var(--color-dark-0);
+}

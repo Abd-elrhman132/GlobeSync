@@ -1,0 +1,26 @@
+.countryList {
+  width: 100%;
+  flex: 1; /* Occupy remaining space */
+  list-style: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+  gap: 1.6rem;
+  padding-right: 0.8rem;
+}
+
+.countryList::-webkit-scrollbar {
+  width: 5px;
+}
+
+.countryList::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.countryList::-webkit-scrollbar-thumb {
+  background: var(--color-dark-3);
+  border-radius: 10px;
+}

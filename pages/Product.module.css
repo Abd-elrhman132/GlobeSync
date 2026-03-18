@@ -33,7 +33,7 @@
   line-height: 1.8;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .product section {
     grid-template-columns: 1fr;
     gap: 4rem;

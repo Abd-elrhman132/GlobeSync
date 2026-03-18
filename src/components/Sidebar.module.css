@@ -10,7 +10,7 @@
   border-right: 1px solid var(--color-dark-2);
   z-index: 500;
   box-shadow: var(--shadow-md);
-  overflow-y: hidden; /* Prevent sidebar itself from scrolling if possible */
+  overflow-y: hidden;
 }
 
 .footer {
@@ -26,13 +26,16 @@
 
 @media (max-width: 900px) {
   .sidebar {
-    position: absolute;
     width: 100%;
     height: auto;
-    bottom: 0;
     flex-basis: auto;
     padding: 2rem;
-    z-index: 1000; /* Ensure it's above map if we were to stack, but logic might need to change for mobile layout */
-    /* For now, just keeping it consistent */
+    border-right: none;
+    border-top: 1px solid var(--color-dark-2);
+    order: 2; /* Move sidebar to bottom of flex container */
+  }
+
+  .footer {
+    display: none; /* Hide footer on small screens to save space */
   }
 }

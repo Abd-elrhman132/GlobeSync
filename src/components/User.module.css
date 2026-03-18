@@ -39,5 +39,5 @@
 
 .user button:hover {
   background-color: #ff4d4d;
-  color: #fff;
+  color: var(--color-light-0);
 }

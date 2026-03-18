@@ -32,9 +32,7 @@ export default function Homepage() {
       {/* HERO SECTION */}
       <section className={styles.hero}>
         <div className={styles.heroImageOverlay} />
-        <div className="container">
-          <PageNav />
-        </div>
+        <PageNav />
         
         <div className={styles.heroContent}>
           <div className={styles.badge}>New: 3D Map View released</div>
@@ -57,10 +55,17 @@ export default function Homepage() {
             </a>
           </div>
         </div>
+
+        <a href="#trusted" className={styles.scrollIndicator}>
+          <span>Scroll</span>
+          <div className={styles.mouse}>
+            <div className={styles.wheel}></div>
+          </div>
+        </a>
       </section>
 
       {/* TRUSTED BY SECTION */}
-      <section className={styles.trustedSection}>
+      <section id="trusted" className={styles.trustedSection}>
         <div className="container">
           <p className={styles.trustedTitle}>Trusted by travelers from</p>
           <div className={styles.brandGrid}>

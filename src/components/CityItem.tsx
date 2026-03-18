@@ -1,7 +1,7 @@
 import { MouseEvent } from "react";
 import { Link } from "react-router-dom";
 import styles from "./CityItem.module.css";
-import { useCities, City } from "../contexts/CitiesContext.tsx";
+import { useCities, City } from "../contexts/CitiesContext";
 
 const formatDate = (date: string) =>
   new Intl.DateTimeFormat("en", {

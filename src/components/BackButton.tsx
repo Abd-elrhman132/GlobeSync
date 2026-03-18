@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { MouseEvent } from "react";
-import Button from "./Button.tsx";
+import Button from "./Button";
 
 function BackButton() {
   const navigate = useNavigate();

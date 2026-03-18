@@ -9,18 +9,15 @@ import {
   useMapEvents,
 } from "react-leaflet";
 import L from "leaflet";
-// @ts-expect-error: marker icon files
 import markerIcon from "leaflet/dist/images/marker-icon.png";
-// @ts-expect-error: marker icon files
 import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
-// @ts-expect-error: marker icon files
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 
 import { useEffect, useState } from "react";
-import { useCities } from "../contexts/CitiesContext.tsx";
-import { useGeolocation } from "../hooks/useGeolocation.tsx";
-import Button from "./Button.tsx";
-import { useUrlPosition } from "../hooks/useUrlPosition.tsx";
+import { useCities } from "../contexts/CitiesContext";
+import { useGeolocation } from "../hooks/useGeolocation";
+import Button from "./Button";
+import { useUrlPosition } from "../hooks/useUrlPosition";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 delete (L.Icon.Default.prototype as any)._getIconUrl;

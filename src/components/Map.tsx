@@ -19,6 +19,8 @@ import { useGeolocation } from "../hooks/useGeolocation";
 import Button from "./Button";
 import { useUrlPosition } from "../hooks/useUrlPosition";
 
+import CityPopup from "./CityPopup";
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 delete (L.Icon.Default.prototype as any)._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -72,11 +74,11 @@ function Map() {
         />
         {cities.map((city) => (
           <Marker
-            position={[city.position.lat, city.position.lng]}
+            position={[Number(city.position.lat), Number(city.position.lng)]}
             key={city.id}
           >
             <Popup>
-              <span>{city.emoji}</span> <span>{city.cityName}</span>
+              <CityPopup city={city} />
             </Popup>
           </Marker>
         ))}

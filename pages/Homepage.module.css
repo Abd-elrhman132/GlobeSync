@@ -98,21 +98,21 @@
 .badge {
   display: inline-block;
   padding: 0.8rem 1.6rem;
-  background-color: rgba(0, 196, 106, 0.1);
+  background-color: rgba(99, 102, 241, 0.1);
   color: var(--color-brand-primary);
   border-radius: 100px;
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 2.4rem;
-  border: 1px solid rgba(0, 196, 106, 0.2);
+  border: 1px solid rgba(99, 102, 241, 0.2);
 }
 
 .heroTitle {
-  font-size: 7.2rem;
+  font-size: var(--font-mega);
   line-height: 1.1;
-  font-weight: 900;
+  font-weight: var(--weight-black);
   margin-bottom: 2.4rem;
-  letter-spacing: -3px;
+  letter-spacing: -0.04em;
   color: var(--color-light-0);
 }
 
@@ -124,8 +124,8 @@
 }
 
 .heroSubtitle {
-  font-size: 2.1rem;
-  line-height: 1.6;
+  font-size: var(--font-lg);
+  line-height: 1.7;
   color: var(--color-light-3);
   margin-bottom: 4.8rem;
   max-width: 65rem;
@@ -198,27 +198,30 @@
   background-color: var(--color-dark-1);
   border: 1px solid var(--color-dark-3);
   border-radius: 20px;
-  transition: transform 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   margin: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .statCard:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
   border-color: var(--color-brand-primary);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .statNumber {
   display: block;
-  font-size: 4.8rem;
-  font-weight: 800;
+  font-size: var(--font-huge);
+  font-weight: var(--weight-extrabold);
   color: var(--color-brand-primary);
   margin-bottom: 0.8rem;
+  letter-spacing: -0.02em;
 }
 
 .statLabel {
-  font-size: 1.6rem;
+  font-size: var(--font-md);
   color: var(--color-light-4);
-  font-weight: 600;
+  font-weight: var(--weight-semibold);
 }
 
 /* FEATURES SECTION */
@@ -228,7 +231,7 @@
 }
 
 .sectionSubtitle {
-  font-size: 1.8rem;
+  font-size: var(--font-lg);
   color: var(--color-light-4);
   margin-top: -3.2rem;
 }
@@ -236,7 +239,7 @@
 .featuresGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.8rem; /* Reduced gap because margin handles some spacing now */
+  gap: 2.8rem;
 }
 
 .featureCard {
@@ -244,13 +247,15 @@
   background-color: var(--color-dark-1);
   border: 1px solid var(--color-dark-3);
   border-radius: 24px;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   margin: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .featureCard:hover {
+  transform: translateY(-8px);
   border-color: var(--color-brand-primary);
-  box-shadow: 0 10px 30px rgba(0, 196, 106, 0.1);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
 }
 
 .iconWrapper {
@@ -281,6 +286,160 @@
   font-size: 1.6rem;
   line-height: 1.7;
   color: var(--color-light-4);
+}
+
+/* DATA PREVIEW SECTION */
+.previewSection {
+  padding: 12rem 0;
+  background-color: var(--color-dark-0);
+}
+
+.previewGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+  align-items: center;
+}
+
+.previewText {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: var(--color-light-4);
+  margin-bottom: 3.2rem;
+}
+
+.previewList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.previewList li {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-light-2);
+}
+
+.checkIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: var(--color-brand-primary);
+  color: var(--color-dark-0);
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+/* DASHBOARD MOCKUP */
+.previewImageContainer {
+  perspective: 1000px;
+}
+
+.dashboardMockup {
+  background-color: var(--color-dark-1);
+  border: 1px solid var(--color-dark-3);
+  border-radius: 12px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transform: rotateY(-10deg) rotateX(5deg);
+  transition: all 0.5s ease;
+}
+
+.dashboardMockup:hover {
+  transform: rotateY(0) rotateX(0) scale(1.02);
+}
+
+.mockupHeader {
+  background-color: var(--color-dark-2);
+  padding: 1rem 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 1px solid var(--color-dark-3);
+}
+
+.dots {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.dots span {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--color-dark-3);
+}
+
+.addressBar {
+  flex: 1;
+  background-color: var(--color-dark-1);
+  border-radius: 4px;
+  font-size: 1.2rem;
+  color: var(--color-light-4);
+  text-align: center;
+  padding: 0.4rem;
+}
+
+.mockupContent {
+  height: 30rem;
+  padding: 2.4rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+}
+
+.globePlaceholder {
+  background-color: var(--color-dark-2);
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.globeCircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18rem;
+  height: 18rem;
+  border: 2px dashed rgba(0, 196, 106, 0.2);
+  border-radius: 50%;
+  animation: rotate 20s infinite linear;
+}
+
+.pulsePoint {
+  position: absolute;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: var(--color-brand-primary);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--color-brand-primary);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.5); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.sidebarMock {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.mockItem {
+  height: 1rem;
+  background-color: var(--color-dark-3);
+  border-radius: 4px;
 }
 
 /* STEPS SECTION */
@@ -413,9 +572,24 @@
     gap: 2.4rem;
   }
   .featuresGrid,
+  .previewGrid,
   .stepsGrid {
     grid-template-columns: 1fr;
     gap: 4rem;
+  }
+  
+  .previewContent {
+    text-align: center;
+    order: 2;
+  }
+
+  .previewImageContainer {
+    order: 1;
+    margin-bottom: 4rem;
+  }
+
+  .dashboardMockup {
+    transform: rotateY(0) rotateX(0);
   }
   .brandGrid {
     gap: 4.8rem;

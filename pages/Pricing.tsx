@@ -9,14 +9,14 @@ export default function Pricing() {
         <section>
         <div>
           <h2>
-            Simple pricing.
+            Enterprise-grade pricing.
             <br />
-            Just $9/month.
+            Starting at $49/node.
           </h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae vel
-            labore mollitia iusto. Recusandae quos provident, laboriosam fugit
-            voluptatem iste.
+            Scale your global data operations with our flexible pricing plans. 
+            Get unlimited data points, real-time syncing, and advanced 
+            geospatial visualization for your entire enterprise.
           </p>
         </div>
         <img src="img-2.jpg" alt="overview of a large city with skyscrapers" />

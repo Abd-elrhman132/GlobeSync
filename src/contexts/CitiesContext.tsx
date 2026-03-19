@@ -22,6 +22,8 @@ interface City {
     lat: number;
     lng: number;
   };
+  activeUsers?: number;
+  status?: "online" | "offline";
   id: string;
 }
 

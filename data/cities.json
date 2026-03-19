@@ -10,6 +10,8 @@
         "lat": 38.727881642324164,
         "lng": -9.140900099907554
       },
+      "activeUsers": 12450,
+      "status": "online",
       "id": "73930385"
     },
     {
@@ -20,69 +22,11 @@
       "date": "2026-02-15T09:41:56.623Z",
       "notes": "",
       "position": {
-        "lat": "27.0982539061379",
-        "lng": "14.721679687500002"
-      }
-    },
-    {
-      "id": "c2ae",
-      "cityName": "El Campillo de la Jara",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2026-02-15T15:51:05.773Z",
-      "notes": "dfsg",
-      "position": {
-        "lat": "39.554883059924016",
-        "lng": "-5.075683593750001"
-      }
-    },
-    {
-      "id": "23be",
-      "cityName": "Beni Ounif",
-      "country": "Algeria",
-      "emoji": "🇩🇿",
-      "date": "2026-02-17T03:43:12.405Z",
-      "notes": "",
-      "position": {
-        "lat": "32.175612478499346",
-        "lng": "-1.2304687500000002"
-      }
-    },
-    {
-      "id": "614a",
-      "cityName": "Salvacanete",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2026-02-17T05:49:02.557Z",
-      "notes": "hello\n",
-      "position": {
-        "lat": "40.111688665595956",
-        "lng": "-1.5161132812500002"
-      }
-    },
-    {
-      "id": "e7ff",
-      "cityName": "Puebla de Almenara",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2026-02-17T05:50:20.708Z",
-      "notes": "",
-      "position": {
-        "lat": "39.791654835253425",
-        "lng": "-2.79052734375"
-      }
-    },
-    {
-      "id": "d635",
-      "cityName": "Giza",
-      "date": "2026-03-18T00:00:00.000Z",
-      "notes": "",
-      "country": "Egypt",
-      "emoji": "🇪🇬",
-      "position": {
-        "lat": 29.49698759653577,
-        "lng": 31.618652343750004
-      }
+        "lat": 27.0982539061379,
+        "lng": 14.721679687500002
+      },
+      "activeUsers": 3120,
+      "status": "online"
     },
     {
       "id": "fde7",
@@ -94,7 +38,9 @@
       "position": {
         "lat": 25.085598897064777,
         "lng": 27.773437500000004
-      }
+      },
+      "activeUsers": 2100,
+      "status": "online"
     },
     {
       "id": "880e",
@@ -106,7 +52,9 @@
       "position": {
         "lat": 41.59079685105603,
         "lng": -3.1860351562500004
-      }
+      },
+      "activeUsers": 540,
+      "status": "online"
     }
   ]
 }

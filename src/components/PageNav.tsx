@@ -24,8 +24,11 @@ function PageNav() {
           <NavLink to="/product" onClick={() => setIsOpen(false)}>Product</NavLink>
         </li>
         <li>
+          <NavLink to="/contact" onClick={() => setIsOpen(false)}>Contact Us</NavLink>
+        </li>
+        <li>
           <NavLink to="/login" className={styles.ctaLink} onClick={() => setIsOpen(false)}>
-            Login
+            Get Started
           </NavLink>
         </li>
       </ul>

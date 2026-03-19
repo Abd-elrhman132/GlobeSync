@@ -20,23 +20,25 @@
 .nav a:visited {
   display: block;
   text-align: center;
-  color: var(--color-light-2);
+  color: var(--color-light-4);
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  font-weight: 700;
   padding: 0.8rem 1.6rem;
   border-radius: 6px;
-  transition: all 0.2s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav a:hover {
   color: var(--color-light-0);
   background-color: rgba(255, 255, 255, 0.05);
+  transform: translateY(-1px);
 }
 
 .nav a:global(.active) {
   background-color: var(--color-dark-0);
-  color: var(--color-light-0);
-  box-shadow: var(--shadow-sm);
+  color: var(--color-brand-primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }

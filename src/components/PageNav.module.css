@@ -38,18 +38,19 @@
 /* Specific styling for the CTA link in the nav */
 a.ctaLink:link,
 a.ctaLink:visited {
-  background-color: var(--color-brand-primary);
-  color: var(--color-dark-0) !important;
+  background: var(--gradient-primary);
+  color: var(--color-light-0) !important;
   padding: 1.2rem 3.2rem;
   border-radius: 12px;
   font-weight: 800;
-  box-shadow: 0 4px 15px rgba(0, 196, 106, 0.2);
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+  transform: scale(1);
 }
 
 a.ctaLink:hover {
-  background-color: var(--color-brand-accent);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 196, 106, 0.3);
+  background: var(--color-brand-accent);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.5);
 }
 
 /* HAMBURGER MENU */

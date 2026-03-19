@@ -35,23 +35,23 @@ export default function Homepage() {
         <PageNav />
         
         <div className={styles.heroContent}>
-          <div className={styles.badge}>New: 3D Map View released</div>
+          <div className={styles.badge}>New: Real-time Data Visualization released</div>
           <h1 className={styles.heroTitle}>
-            Map your world.<br />
-            <span className={styles.gradientText}>Sync your memories.</span>
+            Visualize your data.<br />
+            <span className={styles.gradientText}>Sync your global insights.</span>
           </h1>
           <p className={styles.heroSubtitle}>
-            GlobeSync is the ultimate travel companion. Track your footsteps 
-            across the globe, document your experiences, and share your 
-            journey with the world.
+            GlobeSync is the enterprise-grade analytics platform. Monitor your 
+            global footprint, analyze regional performance, and optimize 
+            your operations with real-time data sync.
           </p>
           
           <div className={styles.ctaGroup}>
             <Link to="/login" className="btn btn-primary">
-              Start Tracking Free
+              Start Analyzing Now
             </Link>
             <a href="#features" className="btn btn-outline">
-              Explore Features
+              View Platform Features
             </a>
           </div>
         </div>
@@ -67,13 +67,13 @@ export default function Homepage() {
       {/* TRUSTED BY SECTION */}
       <section id="trusted" className={styles.trustedSection}>
         <div className="container">
-          <p className={styles.trustedTitle}>Trusted by travelers from</p>
+          <p className={styles.trustedTitle}>Powering global analytics for</p>
           <div className={styles.brandGrid}>
-            <span>Lonely Planet</span>
-            <span>National Geographic</span>
-            <span>TripAdvisor</span>
+            <span>Stripe</span>
+            <span>Shopify</span>
+            <span>Uber</span>
+            <span>Slack</span>
             <span>Airbnb</span>
-            <span>Expedia</span>
           </div>
         </div>
       </section>
@@ -84,19 +84,19 @@ export default function Homepage() {
           <div className={styles.statsGrid}>
             <div className={styles.statCard}>
               <span className={styles.statNumber}>150+</span>
-              <span className={styles.statLabel}>Countries Covered</span>
+              <span className={styles.statLabel}>Global Hubs</span>
             </div>
             <div className={styles.statCard}>
               <span className={styles.statNumber}>2M+</span>
-              <span className={styles.statLabel}>Cities Tracked</span>
+              <span className={styles.statLabel}>Data Points</span>
             </div>
             <div className={styles.statCard}>
-              <span className={styles.statNumber}>500k</span>
-              <span className={styles.statLabel}>Active Explorers</span>
+              <span className={styles.statNumber}>50k</span>
+              <span className={styles.statLabel}>Enterprise Users</span>
             </div>
             <div className={styles.statCard}>
-              <span className={styles.statNumber}>100%</span>
-              <span className={styles.statLabel}>Private & Secure</span>
+              <span className={styles.statNumber}>99.9%</span>
+              <span className={styles.statLabel}>Uptime SLA</span>
             </div>
           </div>
         </div>
@@ -105,34 +105,88 @@ export default function Homepage() {
       {/* FEATURES SECTION */}
       <section id="features" className="container section-padding">
         <div className={styles.sectionHeader}>
-          <h2 className="heading-secondary">Everything you need to track your travels</h2>
-          <p className={styles.sectionSubtitle}>Powerful features designed for the modern adventurer.</p>
+          <h2 className="heading-secondary">Complete Global Operations Visibility</h2>
+          <p className={styles.sectionSubtitle}>Advanced analytics tools designed for data-driven teams.</p>
         </div>
         
         <div className={styles.featuresGrid}>
           <div className={styles.featureCard}>
             <div className={styles.iconWrapper}><MapIcon /></div>
-            <h3 className={styles.featureTitle}>Interactive Mapping</h3>
+            <h3 className={styles.featureTitle}>Geospatial Intelligence</h3>
             <p className={styles.featureText}>
-              A beautiful, responsive map that updates in real-time as you log 
-              your travels. See your global footprint expand visually.
+              Leverage dynamic mapping to visualize regional performance metrics
+              in real-time across your entire global infrastructure.
             </p>
           </div>
           <div className={styles.featureCard}>
             <div className={styles.iconWrapper}><JournalIcon /></div>
-            <h3 className={styles.featureTitle}>Personal Journal</h3>
+            <h3 className={styles.featureTitle}>Integrated Audit Logs</h3>
             <p className={styles.featureText}>
-              Attach notes, dates, and memories to every pin. Keep a digital 
-              diary of your life&apos;s greatest adventures safely stored.
+              Maintain detailed records of every operational change. Track 
+              historical performance and ensure compliance with automated logging.
             </p>
           </div>
           <div className={styles.featureCard}>
             <div className={styles.iconWrapper}><SyncIcon /></div>
-            <h3 className={styles.featureTitle}>Access Everywhere</h3>
+            <h3 className={styles.featureTitle}>Low-Latency Syncing</h3>
             <p className={styles.featureText}>
-              Your data stays synced across all your devices. Never lose your 
-              travel history, no matter where your journey takes you next.
+              Ensure all your data is synchronized across the world in milliseconds. 
+              Make critical decisions based on the most current data available.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* DATA PREVIEW SECTION */}
+      <section className={styles.previewSection}>
+        <div className="container">
+          <div className={styles.previewGrid}>
+            <div className={styles.previewContent}>
+              <h2 className="heading-secondary" style={{ textAlign: "left" }}>
+                Real-time visibility into your global operations
+              </h2>
+              <p className={styles.previewText}>
+                Our intuitive dashboard gives you a bird&apos;s-eye view of your entire 
+                infrastructure. Monitor traffic, identify bottlenecks, and 
+                optimize performance with geospatial data that updates as it 
+                happens.
+              </p>
+              <ul className={styles.previewList}>
+                <li>
+                  <span className={styles.checkIcon}>✓</span>
+                  Multi-region performance tracking
+                </li>
+                <li>
+                  <span className={styles.checkIcon}>✓</span>
+                  Automated anomaly detection
+                </li>
+                <li>
+                  <span className={styles.checkIcon}>✓</span>
+                  Customizable KPI visualization
+                </li>
+              </ul>
+            </div>
+            <div className={styles.previewImageContainer}>
+              <div className={styles.dashboardMockup}>
+                <div className={styles.mockupHeader}>
+                  <div className={styles.dots}><span /><span /><span /></div>
+                  <div className={styles.addressBar}>analytics.globesync.io</div>
+                </div>
+                <div className={styles.mockupContent}>
+                  <div className={styles.globePlaceholder}>
+                    <div className={styles.globeCircle} />
+                    <div className={styles.pulsePoint} style={{ top: "30%", left: "40%" }} />
+                    <div className={styles.pulsePoint} style={{ top: "50%", left: "70%" }} />
+                    <div className={styles.pulsePoint} style={{ top: "20%", left: "60%" }} />
+                  </div>
+                  <div className={styles.sidebarMock}>
+                    <div className={styles.mockItem} style={{ width: "80%" }} />
+                    <div className={styles.mockItem} style={{ width: "60%" }} />
+                    <div className={styles.mockItem} style={{ width: "70%" }} />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -144,23 +198,23 @@ export default function Homepage() {
           <div className={styles.stepsGrid}>
             <div className={styles.stepCard}>
               <div className={styles.stepNumber}>01</div>
-              <h3 className={styles.stepTitle}>Pin Your Location</h3>
+              <h3 className={styles.stepTitle}>Connect Your Sources</h3>
               <p className={styles.stepText}>
-                Click on any city on the global map to mark where you&apos;ve been.
+                Integrate your existing data streams from any global region.
               </p>
             </div>
             <div className={styles.stepCard}>
               <div className={styles.stepNumber}>02</div>
-              <h3 className={styles.stepTitle}>Add the Details</h3>
+              <h3 className={styles.stepTitle}>Analyze in Real-time</h3>
               <p className={styles.stepText}>
-                Note down the dates, your favorite spots, and what made the trip special.
+                Monitor KPIs and performance metrics on your personalized dashboard.
               </p>
             </div>
             <div className={styles.stepCard}>
               <div className={styles.stepNumber}>03</div>
-              <h3 className={styles.stepTitle}>Build Your Map</h3>
+              <h3 className={styles.stepTitle}>Scale Operations</h3>
               <p className={styles.stepText}>
-                Watch your personalized world map grow and share it with friends.
+                Use actionable insights to optimize your global business infrastructure.
               </p>
             </div>
           </div>
@@ -174,7 +228,7 @@ export default function Homepage() {
             <div className={styles.footerLogoDesc}>
               <Logo />
               <p className={styles.footerDesc}>
-                Making travel tracking simple and beautiful for adventurers worldwide.
+                Advanced global data analytics and visualization for the modern enterprise.
               </p>
             </div>
             <div>
